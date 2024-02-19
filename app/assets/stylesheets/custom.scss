@@ -77,7 +77,7 @@ body {
 }
 
 .photo {
-  height: 70%;
+  height: 15rem;
   padding: 0.2rem;
 }
 
@@ -171,4 +171,23 @@ body {
 
 .justify-content-end {
   justify-content: end;
+}
+
+.page-item a {
+  color: #D92117;
+}
+
+.page-item a:hover {
+  color: #D92117;
+}
+
+.active a {
+  background-color: #D92117 !important;
+  border-color: #D92117 !important;
+}
+
+.active a:hover {
+  color: #ffff;
+  background-color: #D92117 !important;
+  border-color: #D92117 !important;
 }
