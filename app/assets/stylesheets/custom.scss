@@ -1,0 +1,152 @@
+body {
+  background-color: #F8F9F9;
+  margin: 0;
+}
+
+#home_link a:link,
+#home_link a:visited,
+#home_link a:hover,
+#home_link a:active {
+  text-decoration: none;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.search {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.search input[type=search] {
+  height: 100%;
+  border-radius: .35rem;
+  border: none;
+  background-color: #F8F9F9;
+  border: 0.5px solid #1414143b;
+}
+
+.search input[type=search]:hover {
+  box-shadow: #00000025 1.95px 1.95px 2.6px;
+}
+
+.search button {
+  height: 100%;
+  cursor: pointer;
+  color: #c02415;
+  border-radius: .25rem;
+  border: 0.5px solid #1414143b;
+  background-color: #fcf9f9b4;
+}
+
+.search button:hover {
+  background: #D92117;
+  color: #ffff;
+  box-shadow: #00000025 1.95px 1.95px 2.6px;
+}
+
+.container {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  /*flex-grow: 1;
+  flex-basis: 12rem;
+  flex-shrink: 0;*/
+  flex: 1 0 20rem;
+  /* o flex equivale às propriedade acima*/
+  height: 25rem;
+  background-color: #e6e0da;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: #00000025 1.95px 1.95px 2.6px;
+}
+
+.card img {
+  height: 100%;
+}
+
+.card-info {
+  padding: 0.2rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-info p {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.photo {
+  height: 70%;
+  padding: 0.2rem;
+}
+
+.wine-name {
+  font-size: 1.3rem;
+  color: #D92117
+}
+
+.wine-info {
+  font-size: 1.1rem;
+  color: rgb(107, 107, 112);
+}
+
+.header {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-shadow: 0 4px 4px 0 #00000025;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.title a {
+  color: #D92117;
+  font-size: 2.5rem;
+}
+
+/* widths */
+
+.w-full {
+  max-width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+/* Flex */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-end {
+  justify-content: end;
+}

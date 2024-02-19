@@ -1,0 +1,9 @@
+<%= tag.div id: dom_id(wine), class:'card flex-column align-item-center' do %>
+  <div class='photo'>
+    <img src=<%= wine.image_url%> alt="">
+  </div>
+  <div class='card-info'>
+    <p class='wine-name'><%= wine.name %></p>
+    <p class='wine-info'><%= wine.location %></p>
+  </div>
+<% end %>
