@@ -1,5 +1,9 @@
-<%= tag.div id: dom_id(wine), class:'card flex-column align-item-center' do %>
-  <div class='photo'>
+<%= tag.div id: dom_id(wine), class:'card flex-column' do %>
+  <div class='wine-rating align-item-start'>
+    <i class="bi bi-star"></i>
+    <p><%= wine.average_rating%></p>
+  </div>
+  <div class='photo flex-column align-item-center'>
     <img src=<%= wine.image_url%> alt="">
   </div>
   <div class='card-info'>

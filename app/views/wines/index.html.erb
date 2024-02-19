@@ -1,29 +1,27 @@
-<div class='header w-full flex-row justify-content-between'>
-  <div class='title', id='home_link'>
-    <%= link_to "WINE SHOP 2.0", wines_path %>
-  </div>
-</div>
+<div class='w-full flex-column', data-controller="search">
+  <div class='main flex-row'>
+    <div class='flex-column'>
+      <div class='search flex-row w-full justify-content-end' data-controller="search">
+        <%= form_with(url: wines_path, method: :get,
+              data: {
+                turbo_frame: 'results',
+                turbo_action: 'advance',
+                controller: 'search',
+                action: 'input->search#submit'
+              }) do |form| %>
+            <%= form.search_field :query, placeholder: 'Search', value: params[:query] %>
+        <% end %>
+      </div>
 
-<div class='w-full flex-column main', data-controller="search">
-  <div class='search flex-row w-full justify-content-end' data-controller="search">
-    <%= form_with(url: wines_path, method: :get,
-          data: {
-            turbo_frame: 'results',
-            turbo_action: 'advance',
-            controller: 'search',
-            action: 'input->search#submit'
-          }) do |form| %>
-        <%= form.search_field :query, placeholder: 'Search', value: params[:query] %>
-    <% end %>
-  </div>
+      <%= turbo_frame_tag "results" do %>
+        <div class='w-full container flex-row flex-wrap'>
+          <%= render @wines %>
+        </div>
 
-  <%= turbo_frame_tag "results" do %>
-    <div class='w-full container flex-row flex-wrap'>
-      <%= render @wines %>
+        <div class='w-full flex-row justify-content-around', data-turbo_frame='results', data-turbo_action='advance' >
+          <%== pagy_bootstrap_nav(@pagy) %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-
-  <div class='w-full flex-row justify-content-around', data-turbo_frame='results', data-turbo_action='advance' >
-    <%== pagy_bootstrap_nav(@pagy) %>
   </div>
 </div>

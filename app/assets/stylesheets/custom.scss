@@ -23,7 +23,6 @@ body {
   height: 100%;
   border-radius: .35rem;
   border: none;
-  background-color: #F8F9F9;
   border: 0.5px solid #1414143b;
 }
 
@@ -55,10 +54,8 @@ body {
   /*flex-grow: 1;
   flex-basis: 12rem;
   flex-shrink: 0;*/
-  flex: 1 0 20rem;
+  flex: 1 0 14rem;
   /* o flex equivale às propriedade acima*/
-  height: 25rem;
-  background-color: #e6e0da;
   padding: 0.5rem;
   margin: 0.5rem;
   box-shadow: #00000025 1.95px 1.95px 2.6px;
@@ -94,6 +91,20 @@ body {
   color: rgb(107, 107, 112);
 }
 
+.wine-rating {
+  display: flex;
+  width: 3rem;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  color: #ffff;
+  background-color: #D92117;
+  border-radius: 0.4rem;
+}
+
+.wine-rating p {
+  margin: 0;
+}
+
 .header {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -107,6 +118,17 @@ body {
 .title a {
   color: #D92117;
   font-size: 2.5rem;
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #444242dc;
 }
 
 /* widths */
